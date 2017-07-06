@@ -1,0 +1,140 @@
+<!--========== BEGIN HEADER ==========-->
+
+
+<section class="page" style="padding-top: 20px; margin-left: 10px; margin-right: 10px; margin-bottom: -40px">
+
+	<div class="col-md-12">
+		Application development, system development such as sales management, work support, etc. centering on Tottori prefecture
+		
+	</div>
+
+
+	<div class="col-md-6">
+		<a href="index"><img class="img-head" src="assets/logo.gif"></a>
+	</div>
+	<div class="col-md-6">
+		<img height="80px" src="assets/header.png">
+		<img class="img-head" style="height: 70px" src="https://www.toasoft.co.jp/common/img/bnrheader_ib01_.gif">
+		<img src="https://www.toasoft.co.jp/common/img/bnrheader_privacy01.gif">
+	</div>
+</section>
+
+<header id="header" class="header-main">
+
+
+	<!-- Begin Navbar -->
+	<nav id="main-navbar" class="navbar navbar-default" role="navigation">
+		<!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
+
+		<div class="container">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+				<!-- <a class="navbar-brand page-scroll" href="index.html">Unika</a> -->
+			</div>
+
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<!--<li><%= link_to 'Home', index_path %></li>-->
+					<li><a href="/index">Index</a></li>
+
+
+					<li class="dropdown">
+
+						<!--<a class="dropdown-toggle page-scroll" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown"
+							href="#about-section">Company Profile <i class="fa fa-angle-down"></i>
+                      </a>-->
+
+						<%=link_to index_path(:anchor => "about-section"), class: "dropdown-toggle page-scroll" do %>
+
+							Company Profile <i class="fa fa-angle-down"></i>
+							<% end %>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="cp_id1">Management Philosophy</a>
+									</li>
+									<li>
+										<a href="cp_id2">Access Map</a>
+									</li>
+									<li>
+										<a href="cp_id3">Qualified Personnel</a>
+									</li>
+								</ul>
+					</li>
+
+
+					<li class="dropdown">
+
+						<!--<a class="dropdown-toggle page-scroll" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown"
+							href="#services-section">Business Content <i class="fa fa-angle-down"></i>
+                      </a>-->
+
+						<%=link_to index_path(:anchor => "services-section"), class: "dropdown-toggle page-scroll" do %>
+							Business Content <i class="fa fa-angle-down"></i>
+							<% end %>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Entrusted Development</a>
+									</li>
+									<li>
+										<a href="#">Packaged Equipment Sales</a>
+									</li>
+									<li>
+										<a href="#">Network Construction</a>
+									</li>
+									<li>
+										<a href="#">Maintenance Work</a>
+									</li>
+								</ul>
+					</li>
+
+					<li>
+						<%=link_to index_path(:anchor => "portfolio-section"), class: "dropdown-toggle" do %>
+							<!--<a class="page-scroll" href="#portfolio-section">Product Info</a>-->
+							Product Info 
+							<% end %>
+
+
+					</li>
+					<li>
+						<%=link_to index_path(:anchor => "prices-section") do %>
+
+							<!--<a class="page-scroll" href="#prices-section">Case Study</a>-->
+							Case Study
+							<% end %>
+
+					</li>
+					<li>
+						<%= link_to 'Career', career_path %>
+					</li>
+					<li>
+						<%= link_to 'Contact', contact_path %>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+	<!-- End Navbar -->
+
+</header>
+<!-- ========= END HEADER =========-->
+
+
+<script>
+                $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+            </script>

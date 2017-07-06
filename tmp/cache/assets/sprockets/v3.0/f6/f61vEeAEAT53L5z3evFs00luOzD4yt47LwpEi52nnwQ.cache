@@ -1,0 +1,9 @@
+{:uriI"œfile://app/assets/stylesheets/seq-slider/apple-style/release-history.txt?type=text/plain&id=60e7525caa622398fbe35c4eb0e1e432572a2470b8251b20b4a6ef1bab0fd2c0:ET:load_pathI"app/assets/stylesheets;T:filenameI"Fapp/assets/stylesheets/seq-slider/apple-style/release-history.txt;T:	nameI"+seq-slider/apple-style/release-history;T:logical_pathI"/seq-slider/apple-style/release-history.txt;T:content_typeI"text/plain;T:sourceI"¤12/03/2014 - v1.3
+
+- Updated to work with Sequence.js v0.9
+- Added height: 100% and width: 100% to the top level UL to allow for detection of mouseenter/mouseleave
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"4processors:type=text/plain&file_type=text/plain;TTI"Tfile-digest://app/assets/stylesheets/seq-slider/apple-style/release-history.txt;TTF:charsetI"
+utf-8;F:digest"%¥”¤…ÒC¨Y¬¶¬œ1tnPö.Öú0Nğ±é²lòa:lengthi¤:dependencies_digest"%Óü‘ØeÄ?­Í4”æ"ÈæW‰¿~‹BFğ­¾O'w:idI"E60e7525caa622398fbe35c4eb0e1e432572a2470b8251b20b4a6ef1bab0fd2c0;F:
+mtimel+²Â×S

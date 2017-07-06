@@ -1,0 +1,152 @@
+<!-- Begin contact section -->
+<section id="contact-section" class="page text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(assets/map-bg.jpg);">
+	<div class="cover"></div>
+
+	<!-- Begin page header-->
+	<div class="page-header-wrapper">
+		<div class="container">
+			<div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+				<h2>Contact Us</h2>
+				<div class="devider"></div>
+				<p class="subtitle">All to contact us</p>
+			</div>
+		</div>
+	</div>
+	<!-- End page header-->
+
+	<div id="reveal-wrap">
+		<p id="reveal-click">Accept</p>
+		<div id="hidden-div" style="height:500px">
+			<p>
+				<div class="contact wow bounceInRight" data-wow-delay="0.4s">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-sm-6">
+								<h4>Access map</h4>
+								<br>
+								<div class="contact-info">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.313561541021!2d133.324886114776!3d35.447030880249486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3556f81f9d5dc707%3A0xc0441c165d8e5600!2z5p2x5Lqc44K944OV44OI44Km44Kn44Ki5qCq5byP5Lya56S-!5e0!3m2!1sen!2s!4v1498730343951"
+										width="560" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="contact-form">
+									<h4>Write to us</h4>
+									<%= form_tag(send_message_path, :method => 'post') do  %>
+										<div class="form-group">
+											<input type="text" name="name" class="form-control input-lg" placeholder="Your Name" required>
+										</div>
+										<div class="form-group">
+											<input type="email" name="email" class="form-control input-lg" placeholder="E-mail" required>
+										</div>
+										<div class="form-group">
+											<input type="text" name="subject" class="form-control input-lg" placeholder="Subject" required>
+										</div>
+										<div class="form-group">
+											<textarea name="message" class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
+										</div>
+										<button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
+										<% end %>
+								</div>
+							</div>
+
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.container -->
+				</div>
+			</p>
+		</div>
+	</div>
+
+
+	<div class="contact wow bounceInRight" data-wow-delay="0.4s">
+		<div class="container" style="padding-bottom:130px">
+			<div class="row">
+
+				<!--<div class="col-sm-6">
+					<h4>Access map</h4>
+					<br>
+					<div class="contact-info">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.313561541021!2d133.324886114776!3d35.447030880249486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3556f81f9d5dc707%3A0xc0441c165d8e5600!2z5p2x5Lqc44K944OV44OI44Km44Kn44Ki5qCq5byP5Lya56S-!5e0!3m2!1sen!2s!4v1498730343951"
+							width="560" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>-->
+
+				<div class="col-sm-12">
+					<h4 class="text-center">About the handling of personal information</h4>
+					<p style="text-align:justify">
+						Toa Software Co., Ltd. (hereinafter referred to as "our company") handles the
+						personal information you provide as follows. Please confirm the following, please agree after transmission. (Person
+						responsible for managing personal information) We will strive to protect the personal information provided by customers
+						by appropriately managing the following persons as the person in charge of personal information management based on
+						our personal information protection management system. 【Personal Information Protection Manager】 Managing Director
+						Kiyoshi Tsuboi Tel: 0859-34-3040 (Purpose of using personal information) We will use the acquired personal information
+						for the following purposes. I will not use it for any other purpose without obtaining the consent of the person himself
+						/ herself. (1) To respond to inquiries (Provision of personal information to third parties) We will never provide the
+						personal information we have acquired to third parties without obtaining the consent of the person, unless stipulated
+						by laws and regulations. (Principal's right) Customer requests disclosure, etc. (personal notice, disclosure, correction
+						of contents, addition or deletion, suspension or elimination of use, suspension of provision to third parties) about
+						personal information that we keep I have a right. For requests such as disclosure, we will respond at the inquiry window
+						described in the "Inquiries" section below. (Optionality) It is optional for the customer to provide personal information.
+						However, we may not be able to provide our services if we can not provide the information we need to achieve the purpose
+						of use described in the "Purpose of using personal information" above, or if the content is not accurate. (Inquiry)
+						Requests for disclosure etc. concerning personal information provided to our company and inquiries on complaints and
+						consultation are as follows. 
+                        <p>【Contact】 Toa Software Co., Ltd. Personal Information Protection Consultation Window</p> 
+                        <p>Tel: 0859-34-3040 E-Mail: p-info@toasoft.co.jp</p> 
+					</p>
+				</div>
+
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</div>
+</section>
+<!-- End contact section -->
+
+<style>
+	#reveal-wrap {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding-bottom: 0;
+		z-index: 100;
+	}
+	
+	#reveal-wrap #reveal-click {
+		background: #1c89ff;
+		color: #fff;
+		cursor: pointer;
+		font-size: 26px;
+		margin: 0px 0 0 10%;
+		padding: 10px 18px;
+		text-decoration: none;
+		display: inline-block;
+	}
+	
+	#reveal-wrap #hidden-div {
+		width: 100%;
+		background: #141619;
+		color: #fff;
+		font-size: 16px;
+		line-height: 22px;
+		margin: 0;
+		padding: 20px;
+	}
+	
+	#reveal-wrap #hidden-div {
+		display: none;
+	}
+</style>
+<script>
+    	  $('#reveal-click').click(function () {
+    $('#reveal-wrap #hidden-div').slideToggle({
+      direction: "up"
+    }, 300);
+    $(this).toggleClass('clientsClose');
+  }); // end click
+</script>
